@@ -1,5 +1,3 @@
-// Add this code at the beginning of your existing JavaScript file or create a new one.
-
 const body = document.body;
 const btnTheme = document.querySelector('.fa-moon');
 const btnHamburger = document.querySelector('.fa-bars');
@@ -61,7 +59,6 @@ const scrollUp = () => {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  // Typed.js Initialization
   var options = {
     strings: [
       'Software Engineer',
@@ -80,11 +77,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var typed = new Typed('.typed', options);
 
-  // Increase font size directly
-  document.querySelector('.typed').style.fontSize = '36px'; // Adjust the font size as needed
+  
+  document.querySelector('.typed').style.fontSize = '36px'; 
 });
 
-// JavaScript for smooth scrolling
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -98,10 +95,7 @@ document.getElementById('contactForm').addEventListener('submit', function (even
 	event.preventDefault();
   
 	const formData = new FormData(this);
-  
-	// You can add client-side validation here if needed
-  
-	// Send form data to the server (replace 'your-server-script' with the actual server script URL)
+ 
 	fetch('your-server-script', {
 	  method: 'POST',
 	  body: formData,
@@ -118,16 +112,7 @@ document.getElementById('contactForm').addEventListener('submit', function (even
 	});
   });
 
-  // script.js
 
-// script.js
-
-/*
-document.getElementById("emailButton").addEventListener("click", function() {
-  window.location.href = "mailto:sharane@binghamton.edu";
-});
-
-  */
 
 
 
